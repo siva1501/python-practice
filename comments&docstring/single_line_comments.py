@@ -1,0 +1,6 @@
+# adding //comments
+a=0
+b=10
+c=a+b
+print(c)
+

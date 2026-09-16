@@ -1,0 +1,13 @@
+with open("stud1.data","a") as fp:
+    print("/"*100)
+    print("File opne in write mode")
+    print("Name of yhe file:",fp.name)
+    print("mode of the file:",fp.mode)
+    print("type() fp",type(fp))
+    print("is the file writeable:",fp.writable())
+    print("is the file readable:",fp.readable())
+    print("/"*100)
+    fp.write("Siva shankara reddy\n")
+    fp.write("Address:ramachandrapuram,house no:3-4,main road\n")
+    fp.write("He id b,tech compled\n")
+    fp.write("search for job\n")

@@ -1,0 +1,13 @@
+with open("stud5.data","r") as fp:
+    print("/"*100)
+    print("File opne in write mode")
+    print("Name of yhe file:",fp.name)
+    print("mode of the file:",fp.mode)
+    print("type() fp",type(fp))
+    print("is the file writeable:",fp.writable())
+    print("is the file readable:",fp.readable())
+    print("/"*100)
+    fll=fp.read()
+    print(fll)
+    flls=fp.readline()
+    print(flls)

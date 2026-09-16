@@ -1,0 +1,73 @@
+L1=["siva",121,555,"mahi"]
+print(L1,type(L1),id(L1))
+#indexing
+print(L1[0])
+#slicing
+print(L1[::-1])
+#append
+L1.append("reddy")
+print(L1,type(L1),id(L1))
+#insert
+L1.insert(0,11)
+print(L1,type(L1),id(L1))
+#remove based on value
+L1.remove(11)
+print(L1,type(L1),id(L1))
+#pop(index)
+L1=["siva",121,555,"mahi"]
+L1.pop(1)
+print(L1,type(L1),id(L1))
+#pop() end value removed
+L1=["siva",121,555,"mahi"]
+L1.pop()
+print(L1,type(L1),id(L1))
+#count of values
+L1=["siva",121,121,121,555,"mahi"]
+L1.count(121)
+print(L1.count(121),type(L1),id(L1))
+#copy
+#sallow copy
+L1=["siva",121,555,"mahi"]
+L2=L1.copy()
+print(L1,type(L1),id(L1))
+print(L2,type(L2),id(L2))
+L2.append("ram")
+L1.insert(1,"Kvr")
+print(L1,type(L1),id(L1))
+print(L2,type(L2),id(L2))
+#Deep copy
+L1=["siva",121,555,"mahi"]
+L2=L1
+print(L1,type(L1),id(L1))
+print(L2,type(L2),id(L2))
+L2.append("ram")
+L1.insert(1,"Kvr")
+print(L1,type(L1),id(L1))
+print(L2,type(L2),id(L2))
+#index(value)
+L1=["siva",121,555,"mahi"]
+print(L1.index(121))
+#reverse
+L1=["siva",121,555,"mahi"]
+L1.reverse()
+print(L1)
+#sort()
+L1=[121,1,2,3,4,5,6,7,8]
+L1.sort()
+print(L1)
+#extend()
+L1=["siva",121,555,"mahi"]
+L2=[121,1,2,3,4,5,6,7,8]
+L1.extend(L2)
+print(L1)
+#nexted list OR inner list
+L1=["siva","ramu",[1,2,3],[4,5,6],121,"harshi"]
+print(L1)
+print(L1[2][0])
+L1[2][2]=18
+print(L1)
+print(L1[2][::-1])
+L1.append("kkk")
+print(L1)
+L1[2].insert(2,55)
+print(L1)
