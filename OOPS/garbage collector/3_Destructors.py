@@ -14,6 +14,10 @@ print("\n Program execution started")
 s1=Student(10,"ravi")#object created
 print("Now we are No Longer interested in maintaing S1 object memory space")
 time.sleep(5)
+del s1 #calling GC forcefully and it insturun call Destructors
+time.sleep(5)
 s2=Student(20,"ram")#object created
 print("\n Program execution ended")
+time.sleep(5)
+del s2 #calling GC forcefully and it insturun call Destructors
 time.sleep(5)
